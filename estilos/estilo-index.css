@@ -407,6 +407,7 @@
     .icon{
         margin-right: 10px;
         margin-left: 10px;
+        margin-bottom: -1px;
     }
     
     .flexbox-footer{
