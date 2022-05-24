@@ -334,7 +334,11 @@
 
 /* ---------- Notebooks y PCs ---------- */
 @media only screen and (min-width: 992px) {
-
+    header{
+        position: sticky;
+        top: 0px;
+        right: 0px;
+    }
     .flexbox-header{
         display:flex;
         justify-content: space-between;
