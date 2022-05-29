@@ -447,6 +447,9 @@
         text-align: center;
         font-size: xx-large;
         color: white;
+        animation-name: cambiarColor;
+        animation-duration: 3s;
+        animation-delay: 1s;
     }
 
     footer{
@@ -457,7 +460,11 @@
     a{
         color: black;
     }
-    
+
+    @keyframes cambiarColor {
+        from {color: rgba(0, 0, 0, 0.6);}
+        to {color: rgb(255, 255, 255);}
+    }      
     
 }  
 

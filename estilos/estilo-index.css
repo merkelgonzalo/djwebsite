@@ -419,6 +419,9 @@
     .parrafo-article{
         text-align: center;
         font-size: large;
+        animation-name: cambiarColor;
+        animation-duration: 3s;
+        animation-delay: 2s;
     }
     
     .parrafo-footer{
@@ -483,6 +486,9 @@
         margin: 0;
         text-align: center;
         font-size: xx-large;
+        animation-name: cambiarColor;
+        animation-duration: 3s;
+        animation-delay: 1s;
     }
     
     h2 {
@@ -501,5 +507,9 @@
         color:rgb(0, 0, 0);
     }
     
+    @keyframes cambiarColor {
+        from {color: rgba(0, 0, 0, 0.6);}
+        to {color: rgb(255, 255, 255);}
+    }
     
 }  
