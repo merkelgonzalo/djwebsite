@@ -383,13 +383,36 @@ body, html {
     
     .flexbox-articles-sect2{
         display: flex;
-        align-items:center;
-        justify-content: space-between;
-        flex-direction: row;
+        align-items: center; /* Alineación vertical superior */
+        justify-content: center; /* Alineación horizontal */
+        flex-direction: column; /* Apilado vertical de elementos */
         padding-left: 50px;
         padding-right: 50px;
-        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
-        height: 100vh; /* 100% del alto de la ventana gráfica */
+        width: 99.1vw;
+        height: 100vh;
+    }
+
+    /* Añade margen superior al primer artículo para separarlo visualmente del encabezado */
+    .flexbox-articles-sect2 > div:first-child {
+        margin-top: 20px; /* Ajusta el valor según tu preferencia */
+    }
+
+    /* Mantén el margen inferior de los artículos constante para mantener la distancia entre ellos */
+    .flexbox-articles-sect2 article {
+        margin-bottom: 20px;
+    }
+
+    .margenes-articles-bot {
+        margin-bottom: 20px;
+    }
+
+    .articles-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        margin-top: 20px; /* Espacio entre el encabezado y los artículos */
+        width: 100%; /* Asegura que ocupe el ancho completo */
     }
     
     .flexbox-articles-sect3{
@@ -398,7 +421,7 @@ body, html {
         justify-content: space-evenly;
         flex-direction: row;
         width: 99.1vw; /* 100% del ancho de la ventana gráfica */
-        height: 100vh; /* 100% del alto de la ventana gráfica */
+        height: 80vh; /* 100% del alto de la ventana gráfica */
     }
 
     .flexbox-iconos{
@@ -407,6 +430,7 @@ body, html {
         justify-content: center;
         flex-direction: row;
     }
+
     .icon{
         margin-right: 10px;
         margin-left: 10px;
@@ -453,8 +477,7 @@ body, html {
         padding-left: 70px;
     }
 
-    #sect1,
-    #sect3 {
+    #sect1 {
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;
         width: 99.1vw; /* 100% del ancho de la ventana gráfica */
@@ -466,6 +489,13 @@ body, html {
         color: rgb(255, 255, 255);
         width: 99.1vw; /* 100% del ancho de la ventana gráfica */
         height: 100vh; /* 100% del alto de la ventana gráfica */
+    }
+
+    #sect3 {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
+        height: 90vh; /* 100% del alto de la ventana gráfica */
     }
 
     #sect4 {
