@@ -8,7 +8,7 @@ body, html {
 }
 
 /* ---------- Celulares ---------- */
-@media only screen and (max-width: 600px) {
+/* @media only screen and (max-width: 600px) {
     header{
         position: relative;
         top: 0px;
@@ -179,10 +179,10 @@ body, html {
         position: relative;
         margin: 0;
     }
-}
+} */
 
 /* ---------- Tablets y celulares grandes ---------- */
-@media only screen and (min-width: 601px) {
+/* @media only screen and (min-width: 601px) {
     header{
         position: sticky;
         top: 0px;
@@ -342,7 +342,7 @@ body, html {
     a, i{
         color:rgb(0, 0, 0);
     }
-}
+} */
 
 /* ---------- Notebooks y PCs ---------- */
 @media only screen and (min-width: 992px) {
@@ -352,17 +352,18 @@ body, html {
         right: 0px;
     }
     .flexbox-header{
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .nav-group {
         list-style-type: none;
         overflow: hidden;
-        border: 10px solid transparent;
-        border-width: 5px;
+        border: solid transparent;
+        border-width: 2px;
         border-image: linear-gradient(to left, rgba(255, 255, 255, 0.6) 0%, rgba(19, 19, 19, 0) 100%) 1;
     }
+
     .margenes-totales{
         margin-left: 50px;
         margin-right: 50px;
@@ -375,7 +376,7 @@ body, html {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        width: 100vw; /* 100% del ancho de la ventana gráfica */
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
         height: 100vh; /* 100% del alto de la ventana gráfica */
     }
     
@@ -384,11 +385,9 @@ body, html {
         align-items:center;
         justify-content: space-between;
         flex-direction: row;
-        /* padding-left: 150px;
-        padding-right: 150px;
-        padding-top: 120px;
-        padding-bottom: 120px; */
-        width: 100vw; /* 100% del ancho de la ventana gráfica */
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
         height: 100vh; /* 100% del alto de la ventana gráfica */
     }
     
@@ -397,7 +396,7 @@ body, html {
         align-items: flex-start;
         justify-content: space-evenly;
         flex-direction: row;
-        width: 100vw; /* 100% del ancho de la ventana gráfica */
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
         height: 100vh; /* 100% del alto de la ventana gráfica */
     }
 
@@ -444,30 +443,34 @@ body, html {
         border-radius: 20px;
     }
 
-    .full-screen-div {
-        width: 100vw; /* 100% del ancho de la ventana gráfica */
-        height: 100vh; /* 100% del alto de la ventana gráfica */
-        box-sizing: border-box;
-    }
-
     .iframe-soundcloud {
         width: 70vw;
         height: 10vw;
     }
 
     #margen-izquierdo{
-        padding-left: 80px;
+        padding-left: 70px;
     }
 
     #sect1,
     #sect3 {
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
+        height: 100vh; /* 100% del alto de la ventana gráfica */
     }
       
     #sect2 {
         background-color: rgba(122, 34, 34, 0.600);
         color: rgb(255, 255, 255);
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
+        height: 100vh; /* 100% del alto de la ventana gráfica */
+    }
+
+    #sect4 {
+        background-color: rgba(255, 255, 255, 0.678);
+        padding-top: 10px;
+        width: 99.1vw; /* 100% del ancho de la ventana gráfica */
     }
     
     li {
@@ -522,11 +525,6 @@ body, html {
         margin: 0;
         padding-top: 3rem;
         padding-left: 2rem;
-    }
-
-    footer{
-        background-color: rgba(255, 255, 255, 0.678);
-        padding-top: 10px;
     }
     
     a, i{
