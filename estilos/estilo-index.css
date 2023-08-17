@@ -357,6 +357,7 @@ body, html {
         align-items: center;
     }
     .nav-group {
+        margin: 0;
         list-style-type: none;
         overflow: hidden;
         border: solid transparent;
